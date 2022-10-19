@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MySecondProject</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+</head>
+<script type="text/javascript">
+
+  var mile =false;
+  
+  var operandoa;
+  var operandob;
+  var operacion;
+  
+  function uno(){
+      var pantalla = document.getElementById("pantalla").value
+          document.getElementById("pantalla").value = pantalla + "1";}
+      
+      function dos(){
+      var pantalla = document.getElementById("pantalla").value
+          document.getElementById("pantalla").value = pantalla + "2";}
+      
+  function tres(){
+      var pantalla = document.getElementById("pantalla").value
+          document.getElementById("pantalla").value = pantalla + "3";}
+      
+  function cuatro(){
+      var pantalla = document.getElementById("pantalla").value
+          document.getElementById("pantalla").value = pantalla + "4";}
+      
+  function cinco(){
+      var pantalla = document.getElementById("pantalla").value
+          document.getElementById("pantalla").value = pantalla + "5";}
+      
+  function seis(){
+      var pantalla = document.getElementById("pantalla").value
+          document.getElementById("pantalla").value = pantalla + "6";}
+      
+  function siete(){
+      var pantalla = document.getElementById("pantalla").value
+          document.getElementById("pantalla").value = pantalla + "7";}
+      
+  function ocho(){
+      var pantalla = document.getElementById("pantalla").value
+          document.getElementById("pantalla").value = pantalla + "8";}
+      
+  function nueve(){
+      var pantalla = document.getElementById("pantalla").value
+          document.getElementById("pantalla").value = pantalla + "9";}
+      
+  function cero(){
+      var pantalla = document.getElementById("pantalla").value
+          document.getElementById("pantalla").value = pantalla + "0";}
+      
+  function punto(){
+      if (mile==false)
+              {  var pantalla = document.getElementById("pantalla").value
+          document.getElementById("pantalla").value = pantalla + ".";
+          mile = true;
+        }
+          /*document.getElementById("pantalla").value = pantalla + ".";*/
+      }
+  
+  function borrar(){
+          var cadena = pantalla = document.getElementById("pantalla").value;
+        var nueva = "";
+        for(i=0; i<cadena.length-1;i++)
+              {
+          nueva = nueva + cadena[i];
+  
+              }
+        pantalla = document.getElementById("pantalla").value = nueva;}
+      
+  
+      /*var pantalla = document.getElementById("pantalla").value
+          document.getElementById("pantalla").value = pantalla = " ";}*/
+  
+  function ce(){
+      var pantalla = document.getElementById("pantalla").value
+          document.getElementById("pantalla2").value = pantalla2 = " ";
+          c()}
+  
+  function c(){
+      var pantalla = document.getElementById("pantalla").value
+          document.getElementById("pantalla").value = pantalla = "";}
+  
+          function suma(){
+          pantalla2 = document.getElementById("pantalla2").value = 
+          pantalla = document.getElementById("pantalla").value;
+           c()
+          mile = false;
+          operacion ="+";}
+  
+          function resta(){
+          pantalla2 = document.getElementById("pantalla2").value = 
+          pantalla = document.getElementById("pantalla").value;
+           c()
+           mile = false;
+          operacion ="-";}
+  
+          function multiplicar(){
+          pantalla2 = document.getElementById("pantalla2").value = 
+          pantalla = document.getElementById("pantalla").value;
+          mile = false;
+           c()
+          operacion ="x";}
+  
+          function dividir(){
+          pantalla2 = document.getElementById("pantalla2").value = 
+          pantalla = document.getElementById("pantalla").value;
+           c()
+           mile = false;
+          operacion ="/";}
+  
+          function porcentaje(){
+          pantalla2 = document.getElementById("pantalla2").value = 
+          pantalla = document.getElementById("pantalla").value;
+          c()
+          operacion ="%";}
+  
+          
+  
+          function igual(){
+              operandob = document.getElementById("pantalla").innerHTML = pantalla;
+          
+                     
+                   if(operacion== "+"){
+                  
+                  var pantalla= document.getElementById("pantalla").value  =parseFloat(pantalla = document.getElementById("pantalla").value)+ parseFloat( pantalla2 = document.getElementById("pantalla2").value);
+                  pantalla2 = document.getElementById("pantalla2").value = "";
+                 }
+  
+                 else if(operacion=="-"){
+                  var pantalla= document.getElementById("pantalla").value = (pantalla2= document.getElementById("pantalla2").value) - (pantalla= document.getElementById("pantalla").value);
+                  pantalla2 = document.getElementById("pantalla2").value = "";
+                 }
+  
+                 else if(operacion=="x"){
+                  var pantalla= document.getElementById("pantalla").value = (pantalla= document.getElementById("pantalla").value) * (pantalla= document.getElementById("pantalla2").value);
+                  pantalla2 = document.getElementById("pantalla2").value = "";
+                 }
+  
+                 else if(operacion=="/"){
+                  var pantalla= document.getElementById("pantalla").value = (pantalla= document.getElementById("pantalla2").value) / (pantalla2= document.getElementById("pantalla").value);
+                  pantalla2 = document.getElementById("pantalla2").value = "";
+                 }
+                 else if(operacion=="%"){
+                  var pantalla= document.getElementById("pantalla").value = (pantalla= document.getElementById("pantalla").value) * (pantalla= document.getElementById("pantalla2").value)/100 ;
+                  pantalla2 = document.getElementById("pantalla2").value = "";
+                 }
+                 
+                 
+          }
+          
+          
+  
+  
+  </script>
+<body>
+  <app-root></app-root>
+</body>
+</html>
