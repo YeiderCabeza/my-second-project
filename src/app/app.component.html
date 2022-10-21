@@ -9,47 +9,47 @@
 
 </head>
 
-
+[]
 
 <body>
   <table class="calculadora">
         
     <tr>
-    <td colspan="4"><input type="number" value="" name="texbox" id="pantalla"></td>
+    <td colspan="4"><input type="number" value="" name="texbox" id="pantalla" [(ngModel)]="pantalla"></td>
     </tr>
 
     <tr>
-        <td colspan="4"><input type="number" value=""  name="texbox" id="pantalla2"></td>
+        <td colspan="4"><input type="number" value=""  name="texbox" id="pantalla2" [(ngModel)]="pantalla2"></td>
         </tr>
 
      <tr>
-         <td><button class="botopera" onclick="porcentaje()" (click)="porcentaje()" id="porcentaje">%</button></td>
+         <td><button class="botopera" click="porcentaje()" (click)="porcentaje()" id="porcentaje">%</button></td>
          <td><button class="botopera" onclick="ce()" (click)="ce()" id="botonce">CE</button></td>
          <td><button class="botopera" onclick="c()"  (click)="c()" id="botonc">C</button></td>
          <td><button class="botopera" onclick="borrar()" (click)="borrar()" id="borrar">⌫</button></td>
      </tr>
      <tr>
-         <td><button class="botonum" onclick="uno()" (click)="num1()" id="uno">1</button></td>
-         <td><button class="botonum" onclick="dos()" (click)="num2()" id="dos">2</button></td>
-         <td><button class="botonum" onclick="tres()" (click)="num3()" id="tres">3</button></td>
+         <td><button class="botonum" onclick="uno()" (click)="num1('')" id="uno">1</button></td>
+         <td><button class="botonum" onclick="dos()" (click)="num2('')" id="dos">2</button></td>
+         <td><button class="botonum" onclick="tres()" (click)="num3('')" id="tres">3</button></td>
          <td><button class="botopera" onclick="dividir()"(click)="dividir()"  id="dividir">/</button></td>
      </tr>
 
      <tr>
-         <td><button class="botonum" onclick="cuatro()" (click)="num4()" id="cuatro">4</button></td>
-         <td><button class="botonum" onclick="cinco()" (click)="num5()" id="cinco">5</button></td>
-         <td><button class="botonum" onclick="seis()" (click)="num6()" id="seis">6</button></td>
+         <td><button class="botonum" onclick="cuatro()" (click)="num4('')" id="cuatro">4</button></td>
+         <td><button class="botonum" onclick="cinco()" (click)="num5('')" id="cinco">5</button></td>
+         <td><button class="botonum" onclick="seis()" (click)="num6('')" id="seis">6</button></td>
          <td><button class="botopera" onclick="resta()" (click)="resta()" id="resta">-</button></td>
      </tr>
      <tr>
-         <td><button class="botonum" onclick="siete()"(click)="num7()" id="siete">7</button></td>
-         <td><button class="botonum" onclick="ocho()"(click)="num8()" id="ocho">8</button></td>
-         <td><button class="botonum" onclick="nueve()"(click)="num9()" id="nueve">9</button></td>
+         <td><button class="botonum" onclick="siete()"(click)="num7('')" id="siete">7</button></td>
+         <td><button class="botonum" onclick="ocho()"(click)="num8('')" id="ocho">8</button></td>
+         <td><button class="botonum" onclick="nueve()"(click)="num9('')" id="nueve">9</button></td>
          <td><button class="botopera" onclick="suma()" (click)="suma()" id="suma">+</button></td>
      </tr>
      <tr>
          <td><button class="botopera" onclick="punto()" (click)="punto()" id="punto">.</button></td>
-         <td><button class="botonum" onclick="cero()" (click)="num0()" id="cero">0</button></td>
+         <td><button class="botonum" onclick="cero()" (click)="num0('')" id="cero">0</button></td>
          <td><button class="botopera" onclick="multiplicar()" (click)="multiplicar()" id="multiplicar">x</button></td>
          <td colspan="2"><button class="botoigual" onclick="igual()" (click)="igual()" id="igual">=</button></td>
      </tr>
